@@ -1,0 +1,41 @@
+{
+  "name": "hapijs-sequelize-dal",
+  "version": "1.0.0",
+  "description": "Prototype of Data Access Layer using sequelizejs (with Hapi.js plugins)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "syncdb": "node ./src/dal/syncdb.js",
+    "migrate": "node ./node_modules/sequelize-cli/bin/sequelize db:migrate "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/char0n/hapijs-sequelize-dal.git"
+  },
+  "keywords": [
+    "sequelize",
+    "hapi",
+    "dal",
+    "dao",
+    "mapper",
+    "data",
+    "database"
+  ],
+  "author": "char0n (vladimir.gorej@gmail.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/char0n/hapijs-sequelize-dal/issues"
+  },
+  "homepage": "https://github.com/char0n/hapijs-sequelize-dal#readme",
+  "dependencies": {
+    "aguid": "=2.0.0",
+    "lodash": "=4.16.2",
+    "monet": "=0.8.10",
+    "pg": "=6.1.2",
+    "pg-hstore": "=2.3.2",
+    "ramda": "=0.22.1",
+    "sequelize": "=3.29.0",
+    "sequelize-cli": "=2.5.1",
+    "validator": "=6.2.1"
+  }
+}

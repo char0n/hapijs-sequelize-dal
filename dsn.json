@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "port": "5432",
+  "database": "sequelize-dal",
+  "username": "postgres",
+  "password": "",
+  "dialect": "postgres"
+}

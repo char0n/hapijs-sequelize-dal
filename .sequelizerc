@@ -1,0 +1,14 @@
+const dsn = require('./dsn.json');
+
+module.exports = {
+  "migrations-path": "./src/dal/migrations",
+  "config": __filename,
+  "development": {
+    "username": dsn.username,
+    "password": dsn.password,
+    "database": dsn.database,
+    "host": dsn.host,
+    "port": dsn.port,
+    "dialect": dsn.dialect,
+  }
+}
