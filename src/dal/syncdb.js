@@ -6,7 +6,11 @@ const { curry, flattenDeep, flow, map } = require('lodash/fp');
 
 const dsn = require('../../dsn.json');
 
-const sequelize = new Sequelize(dsn.database, dsn.username, dsn.password, { dialect: dsn.dialect });
+const sequelize = new Sequelize(dsn.database, dsn.username, dsn.password, {
+  dialect: dsn.dialect,
+  host: dsn.host,
+  port: dsn.port,
+});
 const tableDefinitionsPath = path.join(__dirname, 'sql', 'tables');
 const migrationsPath = path.join(__dirname, 'migrations');
 

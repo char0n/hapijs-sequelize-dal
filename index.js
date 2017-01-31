@@ -9,7 +9,11 @@ const userRepository = require('./src/dal/repositories/user');
 const dsn = require('./dsn.json');
 const { bindRepository, toJSON } = require('./src/dal/utils');
 
-const sequelize = new Sequelize(dsn.database, dsn.username, dsn.password, { dialect: dsn.dialect });
+const sequelize = new Sequelize(dsn.database, dsn.username, dsn.password, {
+  dialect: dsn.dialect,
+  host: dsn.host,
+  port: dsn.port,
+});
 // Bounding sequelize instance into dal.
 sequelize.import('./src/dal/model');
 dal.initialize(sequelize);
