@@ -4,7 +4,7 @@
   "description": "Prototype of Data Access Layer using sequelizejs (with Hapi.js plugins)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./index.js",
     "syncdb": "node ./src/dal/syncdb.js",
     "migrate": "node ./node_modules/sequelize-cli/bin/sequelize db:migrate "
   },
