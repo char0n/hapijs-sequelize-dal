@@ -2,6 +2,8 @@
 
 const userModelFactory = require('./user');
 
-module.exports = (sequelize, DataTypes) => ({
-  userModel: userModelFactory(sequelize, DataTypes),
-});
+module.exports = (sequelize, DataTypes) => {
+  userModelFactory(sequelize, DataTypes);
+  
+  return sequelize.models;
+};
